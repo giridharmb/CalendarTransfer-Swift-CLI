@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		471E8ED72D0B2DF0009848BD /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 471E8ED62D0B2DF0009848BD /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		471E8EC92D0B2DC2009848BD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				471E8ED72D0B2DF0009848BD /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = CalendarTransfer;
 			packageProductDependencies = (
+				471E8ED62D0B2DF0009848BD /* ArgumentParser */,
 			);
 			productName = CalendarTransfer;
 			productReference = 471E8ECB2D0B2DC2009848BD /* CalendarTransfer */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 471E8EC22D0B2DC2009848BD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				471E8ED52D0B2DF0009848BD /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 471E8ECC2D0B2DC2009848BD /* Products */;
 			projectDirPath = "";
@@ -285,6 +294,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		471E8ED52D0B2DF0009848BD /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		471E8ED62D0B2DF0009848BD /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 471E8ED52D0B2DF0009848BD /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 471E8EC32D0B2DC2009848BD /* Project object */;
 }
